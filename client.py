@@ -252,7 +252,7 @@ class Client:
         """
         connected = False
 
-        # try to connect as long as connection attempts have not been successful
+        # try to connect as long as  connection attempt fails
         while not connected:
             try:
                 self.__client.connect((server_ip, server_port))

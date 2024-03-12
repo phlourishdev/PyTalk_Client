@@ -7,6 +7,7 @@ from textual.widgets import Header, Footer, Tabs, Tab, Label, Input, Button
 class LoginTUI(App):
 
     BINDINGS = [("ctrl+c", "exit", "Exit the program")]
+    CSS_PATH = "login_form.tcss"
 
     def __init__(self, user) -> None:
         # copy everything from the superclass' constructor
